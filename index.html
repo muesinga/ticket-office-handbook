@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-right: 200px;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.background {
+  background-color: #FAF9F6;
+}
+
+.section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.dotted-line {
+  border:none;
+  border-top:1px dashed;
+  height:1px;
+  width:50%;
+}
+
+.landing-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 125px;
+  width: 50%;
+}
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body class="background">
+
+<div class="sidenav">
+  <button class="dropdown-btn">Subscriptions
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#sub-overview">Overview</a>
+    <a href="#fixed">Fixed Series</a>
+    <a href="#flex">Flex & Specials</a>
+  </div>
+  <button class="dropdown-btn">Exchanges & Donations
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#sub-exchange">SUB Exchange Overview</a>
+    <a href="#stb-exchange">STB Exchange Overview</a>
+    <a href="#voucher">Exchange Voucher</a>
+    <a href="#donation">Ticket Donation</a>
+  </div>
+  <button class="dropdown-btn">Discounts, Special Offers & Group Tickets
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#discount-overview">Overview</a>
+    <a href="#sub-discount">SUB Discount</a>
+    <a href="#a4a-discount">Arts for All</a>
+    <a href="#student">Student</a>
+    <a href="#military">Military</a>
+    <a href="#senior">Senior Rush</a>
+    <a href="#pyp-mys">PYP/MYS</a>
+    <a href="#chinook">Chinook Book</a>
+    <a href="#arts-card">The Arts Card/Arts Impact Fund</a>
+    <a href="#comp-ticket">Complimentary Tickets</a>
+    <a href="#staff-discount">Staff Discount</a>
+    <a href="#former-musician">Former Musician Discount</a>
+    <a href="#choir-discount">Choir Discount</a>
+    <a href="#gospel-choir-discount">Gospel Choir Discount</a>
+    <a href="#other-offers">Speical Offers</a>
+    <a href="#group-tickets">Group Tickets</a>
+  </div>
+  <button class="dropdown-btn">Concert Guide
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#concert-overview">Overview</a>
+    <a href="#will-call">Will Call Guide</a>
+    <a href="#cancellations">Cancellations</a>
+    <a href="#children">Children</a>
+    <a href="#hall-discounts">At Hall Discounts</a>
+  </div>
+  <a href="#ada">ADA How-To</a>
+  <a href="#resources">Resources</a>
+</div>
+
+<div class="main">
+  <div class="chapter">
+  <img class="landing-logo" src="https://www.orsymphony.org/globalassets/media/logo_OS_v_RGB.png">
+  <h1 class="section">Ticket Office Handbook</h1>
+  <hr>
+  <div id="sub-overview">
+  <h1 class="section">Subscriptions</h1>
+  <h3><u>Overview</u></h3>
+  <p>
+    The Oregon Symphony offers a variety of subscription ticket packages.  There are two types:  Fixed Series package and a Flex package.  The Fixed Series packages are a specific set of pre-selected concerts.  The Flex package is a package that can be mostly customized by the Subscriber.  </p>
+  <p> 
+    The benefits of being a <b>Fixed Series</b> subscriber are:
+    <ol>
+      <li>Lowest Prices for Best Seats</li> 
+      <li>Subscriber Discounts on Add-On Concerts</li> 
+      <li>Free Exchanges</li>
+      <li>No Handling Fees on Add-On Concerts</li>
+      <li>Invites to Special Subscriber Only Events</li>
+      <li>The Same Seat Each Season</li>
+      <li>Early Access to Special Concerts</li>
+      <li>Rehearsal Passes</li>
+      <li>Payment Plan Options</li>
+    </ol>
+  </p>
+  <p>
+    The benefits of being a <b>Flex Series</b> subscriber are:
+  <ol>
+    <li>Subscriber Discounts on Add-On Concerts</li> 
+    <li>Free Exchanges</li>
+    <li>No Handling Fees on Add-On Concerts</li>
+    <li>Invites to Special Subscriber Only Events</li>
+    <li>Ability to Create a Custom Package of Their Choosing</li>
+  </ol>
+  <hr class="dotted-line">
+  </p>
+  </div>
+  <div id="fixed">
+  <h2 class="section">Fixed Series</h2>
+  <h3><u>Classical Series</u></h3>
+  <p>
+    Classical concerts are concerts where classical music is the focus. We offer 18 different Classical concerts. They can be purchased in sets of 6, 12, or all 18. The Classical concerts take place on Saturdays at 7:30 pm, Sundays at 2:00 pm, and Mondays at 7:30 pm.
+  </p>
+  <h3><u>Pops Series</u></h3>
+  <p>
+    Pops concerts are concerts where popular music is the focus. We offer 4 different Pops concerts. The Pops concerts take place on Saturdays at 7:30 pm and Sunday at 2:00 pm.
+  </p>
+  <h3><u>Popcorn Series</u></h3>
+  <p>
+    Popcorn concerts are movies that we screen while the Orchestra plays the score live. We offer 4 Popcorn Package concerts. The Popcorn concerts take place on Saturdays at 7:30 pm and Sundays at 2:00pm. Sometimes, due to popularity, there may be an added show on Friday Night or another weekend day. 
+  </p>
+  <h3><u>Kids Series</u></h3>
+  <p>
+    Kids concerts are hour long concerts geared towards children under 7. We offer 3 Kids concerts. The Kids concerts take place on Sundays at 2:00 pm.  
+  </p>
+  <h3><u>Salem Series Concerts</u></h3>
+  <p>
+    Salem Series concerts are 6 select Classical Concerts performed by the Oregon Symphony Orchestra in Salem, OR. We offer 6 Salem Series Concerts. Salem concerts take place on Fridays at 7:30 pm at Smith Auditorium at Willamette University.
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="flex">
+  <h2 class="section">Flex Package</h2>
+  <h3><u>Choose Your Own (CYO)</u></h3>
+  <p>
+    The Choose Your Own (CYO) Package is a flexible package made of a minimum of 3 eligible concerts. Currently, the only eligible CYO concerts are all 18 Classical and the 4 Pops concerts. CYO subscribers can add Kids, Popcorn, or Special concerts to their package at full price.  
+  </p>
+  <h2 class="section">Special Concerts</h2>
+  <p>
+    We offer a variety of one-night-only Special concerts. They can range from famous classical musicians, Broadway singers, or popular music acts. Special concerts can happen any day of the week but are generally on weeknights at 7:30 pm. You receive no benefits for purchasing Special concerts. 
+  </p>
+  <h3><u>Premium Special Concerts</u></h3>
+  <p>
+    Each season we have a small number of Premium Special concerts that we do not discount even for our Subscribers. This season Itzhak Perlman and the Pink Martini Valentine concerts are the Premium Special concerts. Premium Special concerts can happen any day of the week.  
+  </p>
+  <hr>
+  </div>
+  <div id="sub-exchange">
+  <h1 class="section">Exchanges & Donations</h1>
+  <ul>
+  <h3><li>Ticket-for-Ticket Exchanges</li></h3>
+  <p>
+    All exchanges are ticket-for-ticket. For example:  Subscribers may not exchange 2 tickets for 1 ticket in a higher priced section, or exchange 2 tickets for 3 tickets in a less expensive section. The only exception to this is in regard to our Kids Series concerts, which is detailed below.  A Subscriber is able to exchange for the same number of higher priced tickets, however, they must pay the difference.  </p>
+  <h3><li>Exchange Deadline</li></h3>
+  <p>
+    The deadline to exchange tickets is 4pm on the Friday before a concert weekend or by 4pm on the last weekday before the concert for weekday concerts. After the deadline, patrons have the option of donating their tickets back as a contribution. If you feel that an exception is warranted, or if a Subscriber is upset by this policy, please check with a manager first.  </p>
+  <h3><li>Refunds</li></h3>
+  <p>
+    The Oregon Symphony generally does not offer refunds on ticket purchases. Patrons inquiring about a refund should be informed of the options of exchanging their concert or donating their tickets back. The order of options which we encourage Subscribers to consider in place of a refund are 1) a Ticket Exchange, 2) a Ticket Donation, 3) an Exchange Voucher, 4) a Season Credit, and 5) a Gift Certificate.  If you feel that an exception is necessary (i.e.: medical situation, death, difficult patron), please see a manager.   </p>
+  <h3><li>Price Types</li></h3>
+  <p>
+    When exchanging, make sure to match the price type with the original tickets. For example, if a patron who purchased a Classical Series subscription wants to change a concert into something from the Pops Series, the Pops concert should also be added with the Pops price type.  </p>
+  <h3><li>Price Differences</li></h3>
+  <p>
+    If a Subscriber wants to exchange their tickets to a more expensive tier, they must pay the difference.  If they exchange into a less expensive seating section, we keep the difference and write it off to the “exchanges” payment method.  If the total price difference for the exchange is $6 or less, it can be written off to exchanges as well.  </p>
+  <h3><li>Writing a Balance Off to Exchanges</li></h3>
+  <p>
+    If there is a negative balance due, the Subscriber does not get a refund for that amount, it will be written off to exchanges. It’s typically a good idea to let a patron know that they will be “losing” that value if they decide to exchange for a less expensive concert or seat section.  </p>
+  <h3><li>Price Details</li></h3>
+  <p>
+    On occasion, it will be necessary to manually adjust the price of a ticket(s) in order to transact upon an exchange. This is because tickets are subject to dynamic price (they are subject to increase or decrease based on decisions made by the Marketing Department). Since many Subscribers purchase/renew their subscription before any of these price changes take place, when Subscribers need to make exchanges as the season is in progress you may need to adjust the price of the tickets that are being exchanged if the tickets are MORE expensive. If the tickets are less expensive the difference should be written off to Exchanges.  </p>
+  <h3><u>Classical & Pops Series</u></h3>
+  <p>
+    Classical and Pops Series Subscribers may exchange freely between Classical, Pops, and Kids Series concerts. We do not allow for exchanges for performances outside these series except for on an EXTREMELY limited and discretionary basis.  If the Subscriber would like to be granted an exception to exchange into a Special or Popcorn Package concert, ask a manager.    </p>
+  <h3><u>Popcorn Package</u></h3>
+  <p>
+    Popcorn Package Subscribers may exchange their tickets for any of the other Popcorn Package concerts. If a Subscriber would like to be granted an exception to exchange into a Classical or Pops series concert, please check with a manager before doing so.  </p>
+  <h3><u>Kids Series</u></h3>
+  <p>
+    Kids Series Subscribers may exchange their tickets between the different Kids Series concerts. They may also make a 2-for-1 exchange into either a Classical or Pops Series concert. Because the Kids Series concerts are priced considerably less than our regular concerts, they can change 2 of their Kids Series tickets for 1 Classical or Pops Series ticket in the same section as their Kids Series subscription. If there is a negative balance, they do not receive a refund for that amount, it will be written off to exchanges. Similarly, Subscribers to the Classics and Pops Series may also exchange 1 of their tickets to get 2 tickets to a Kids Series concert. When doing so, 1 of the tickets for the Kids Series concert should be issued at the regular “Kids Subs” price type, and the 2nd ticket should be issued as a COMP (comp reason “Marketing Promotion”). Any remaining negative balance should be written off to exchanges.  </p>
+  <h3><u>Choose Your Own Subscribers</u></h3>
+  <p>
+    Choose Your Own Subscribers also have the benefit of making exchanges. They may exchange their tickets for any other concerts that are offered eligible for the CYO Package. This includes Classical and Pops. It does NOT include concerts from the Popcorn Package, Kids Package Special concerts. (NOTE: Classical and Pops Fixed Series Subscribers can exchange into Kids Series Concerts, however CYO Subscribers cannot). If they are moving to a higher tier, they must pay that difference.  </p>
+  <h3><u>Salem Series Concerts</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Special Concerts</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </ul>
+  <hr class="dotted-line">
+  </div>
+  <div id="stb-exchange">
+  <h2 class="section">Single Ticket Buyers (STB) Exchange Overview</h2>
+  <p>
+    Because free exchanges are a primary benefit of subscribing to the Symphony, we typically do not extend the same courtesy to Single Ticket Buyers who are just purchasing single tickets, but with a few exceptions. 
+  </p>
+  <ul>
+  <h3><li>Ticket-for-Ticket Exchanges</li></h3>
+  <p>
+    All exchanges are ticket-for-ticket. STB patrons may not exchange 2 tickets for 1 ticket in a higher priced section, or for a more expensive concert.
+  </p>
+  <h3><li>Exchange Deadline</li></h3>
+  <p>
+    The deadline to exchange tickets is 4pm on the last weekday before the concert. After the deadline, STB patrons have the option of donating their tickets back as a tax-deductible contribution. If you feel that an exception is warranted, or if a patron is upset by this policy, please check with a manager first.  
+  </p>
+  <h3><li>Refunds</li></h3>
+  <p>
+    The Oregon Symphony does not offer refunds on ticket purchases. The only exception to this is in the rare event that a concert is canceled and not rescheduled. Patrons inquiring about a refund should be informed of the options of exchanging their concert or donating their tickets back. If you feel that an exception is necessary (i.e.: medical situation, death, difficult patron), please see a manager.
+  </p>
+  <h3><li>Same Series, Different Day</li></h3>
+  <p>
+    If a STB patron purchased single tickets to a Classical or Pops Series concert and only needs to change the day, they may do so at no charge. For example, if a STB patron bought two tickets to the Saturday evening performance of “Mahler’s 6th Symphony”, and they would like to change to the Monday evening performance of the same concert, we will do that for them free of charge. When doing so, make sure to waive the handling fee attached to the new performance in the order.
+  </p>
+  <h3><li>Different Series Concert</li></h3>
+  <p>
+    However, if a STB patron purchased single tickets to a Classical or Pops Series concert and needs to change to a completely different performance, they will be charged a $6 per-ticket exchange fee.  </p>
+  <h3><li>Exchange Fees</li></h3>
+  <p>
+    When adding the $6 exchange fee, the additional handling fee for the new concert must still be waived. The $6 exchange fee must be manually added in the “Fees” tab in the order (“2020 Exchange Fee”). Make sure to add an exchange fee for each ticket being exchanged.
+  </p>
+  <h3><li>Price Differences</li></h3>
+  <p>
+    For STB patrons, they must always pay the difference in ticket price, regardless of the amount, on top of the $6 exchange fee per ticket (if one is required). If they are exchanging for less expensive tickets, that negative balance must be written off to exchanges before charging the $6 per ticket fee.
+  </p>
+  <h3><li>Special Concerts</li></h3>
+  <p>
+    We typically do not exchange tickets to any of our Special concerts for STB patrons. If you have a STB patron who would like to do so, please check with a manager first. Depending on the Special concert, we may allow them to exchange for a different Special concert. They will still be charged a $6 per-ticket exchange fee, and they will have to pay the difference in price.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="voucher">
+  <h2 class="section">Exchange Vouchers</h2>
+  <h3><u>Series Subscriber Exchange Voucher</u></h3>
+  <p>
+    Occasionally, Subscribers will call in to return tickets to a concert they cannot attend, but they will not have a new concert picked out at the time. In this instance, they may return the tickets to the concert they cannot attend, for “Exchange Vouchers” that will be held in their subscription order until they call back with their choice of a new concert. When issuing exchange vouchers for a Subscriber, be sure to match the price type to their subscription tickets. Make sure to “seat” the Exchange Vouchers in the same section as their subscription.  Portland and Salem have separate Exchange Vouchers, please make sure to select the correct voucher.   </p>
+  </div>
+  <div>
+  <h3><u>Single Ticket Buyer Exchange Voucher</u></h3>
+  <p>
+    In the event a STB patron cannot make their scheduled concert and has been granted an exception to exchange, they should be encouraged to choose another concert before the Exchange Voucher is offered as an option. When a STB patron does not have a new concert picked out, we can return their seats and add “Exchange Voucher STB” to their order for the number of seats they are exchanging.  Portland and Salem have separate Exchange Vouchers, please make sure to select the correct voucher.  After you’ve added the STB Exchange Voucher, you will need to manually input the price for the “Exchange Voucher STB” line item. To do so, add the Exchange Voucher STB line item, and seat it in the same section as the tickets they are exchanging. Click on the “Price Dtls” button at the bottom of the order screen. This will bring up a window that says “Price Details”. It will default to a small box that is highlighted in blue that says “Price”. The price entered in this box should be the per ticket price of the tickets they are exchanging (the price without the handling fee). They do not need to pay the $6 per ticket exchange fee at the time they are returning their tickets, but please leave notes in the order indicating that they will need to pay the exchange fee at the time they call back to complete the exchange. NOTE: Due to dynamic pricing of performances over the course of the season, it may be necessary at times to issue STB Exchange Voucher to SUB patrons who are requesting an Exchange Voucher option when moving out of a performance. Although this is a somewhat niche situation, this is because the Exchange Voucher will have a fixed price point. If the SUB patron needs to store a value that is not exactly equal to the Exchange Voucher, you will need to issue a STB Exchange Voucher to zero out the Total Due. If you do issue a STB Exchange Voucher to a SUB patron, leave an order note detailing the type of series being exchanged out of so that the PSR who eventually processes the exchange out of the STB Exchange Voucher will know which concerts the stored value qualifies for.   </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="donation">
+  <h2 class="section">Ticket Donation</h2>
+  <p>
+    All Oregon Symphony patrons have the option of donating tickets they cannot use back to the Symphony as a tax-deductible donation.
+  </p>
+  <p>
+    If the patron is donating tickets back before the week of the concert, return the concert and put the negative to the Donations payment method. Please make a note in the notes line like this. “[date] Ticket Donation $X [initials],” So it would look like 6/25/2021 Ticket Donation $200 EJ, This is so Development knows where the revenue is coming from.
+  </p>
+  <p>
+    If it is the week of a concert, we must always donate in a new order (NOT in the original subscription or single ticket order). To do so, open a new order on a patron's account under “Ticket” Mode of Sale. Create a line item with the date of the concert they are donating, and find their seats on the seat map.
+  </p>
+  <p>
+    Their seats should show up as orange in the map. Right click on each seat and choose “Donate for Resale” from the drop down menu. It will provide a prompt asking if you really want to donate the seat back. Click “OK” to donate the seat back.
+  </p>
+  <p>
+    To print a donation receipt, click “Print Order” at the bottom of the order screen. The donation receipt is located in the “Header” drop down menu of the print window. Change the header to “Donated Tickets Form” from the drop down, and print the receipt. The receipt will print on ticket stock, and you'll need to write the date of the performance that is being donated back. Print a normal header and mail the receipt like a regular ticket order.
+  </p>
+  <hr>
+  </div>
+  <div id="discount-overview">
+  <h1 class="section">Discounts, Special Offers & Group Tickets</h1>
+  <h3><u>Overview</u></h3>
+  <p>
+    The Oregon Symphony offers several discounts on tickets throughout the season. All discounts are always subject to availability. Not every concert is available at a discount, as some of our concerts sell out or get very close to selling out. The decision about what discounts will be offered is made Monday, the week of a concert, although sometimes later. Patrons who are inquiring about discounts to a performance in the future are encouraged to check back with us the week of a concert.
+  </p>
+  <p>
+    Ticket discounts are never valid on seats in the Dress Circle. The Marketing department also runs a number of promotions throughout the season, both for subscriptions and single tickets.
+  </p>
+  <p>
+    Specific details about these discounts and promotions are provided in the “Promotions” document and the “Web Promotions” document. These documents are located on the G: Drive/Departments/Ticketing/CURRENT OFFERS. All PSR's must keep a shortcut to both documents on the desktop of their computer for easy access. They are very helpful, detailed, and are updated regularly to include any new information and to get rid of any old or expired offers/discounts. The “Promotions” document details all of the discounts that are typically offered through the Ticket Office. The “Web Promotions” document primarily details offers and promotions that are available through our website. Many of the offers in the “Web Promotions” document are ones that patrons receive via email from the Symphony.  
+  </p>
+  </div>
+  <div id="sub-discount">
+  <h3><u>Subscriber Discount</u></h3>
+  <p>
+    If a subscriber would like to purchase any additional tickets on top of their subscription, we can offer them a 10% discount.  This applies to special Concerts as well.  The only exception would be if we have a Premium Concert where we offer no discounts. 
+  </p>
+  <p>
+    To reserve a Subscriber discount ticket you would use the Disc 10% price type with “Subscriber Discount” as the Price Type Reason. 
+  </p>
+  </div>
+  <div id="a4a-discount">
+  <u><h3>Arts for All</h3></u>
+  <p>
+    As part of the Arts for All program, the Oregon Symphony offers $5 tickets to select performances to Oregon Trail Card holders. The number of tickets offered with the Arts for All discount can vary depending on the popularity of a concert, but it is most often 2 tickets, and occasionally up to 4.
+  </p>
+  <p>
+    In order to take advantage of the discount, Oregon Trail Card holders must present a valid card in person or over the phone. The Arts for All discount is not available through our website. They must do so once per season. For patrons ordering over the phone, they must read the full number of their Oregon Trail Card, which is to be recorded in the “Notes” field of the order screen. The process is the same for when they present their card in person.  
+  </p>
+  <p>
+    In order to set someone up for the Arts for All discount, they must have an account in Tessitura. In the “Attributes” tab of their account, click on the “Constituencies” option. Click “Add” in the bottom left corner of the screen, and a drop down menu will appear. Select the “Art for All (ART)” option from the drop down menu. You will also need to assign a date range. The beginning date should be the day you are creating the account or setting up the attribute, and the end date should always be June 30th of whatever year the current season will end in (for example, this season would be 6/30/2020). Our fiscal year ends June 30th, so after this time, the attribute will expire, and they will need to present a valid Oregon Trail Card again at the beginning of the next season. Once they have been set up in Tessitura with the “ART” constituency, they do not need to present their card again for the rest of the season.
+  </p>
+  <p>
+    When selling tickets with the Arts for All discount, the price type is “$5 Special”, and the price type reason is “Art for All”. Depending upon the concert and seating availability, the area open for the Arts for All discount varies but is usually Stage or Front Center Right. Other open seating areas are determined by the Director of Patron Services or the Ticket Office Manager.  
+  </p>
+  </div>
+  <div id="student">
+  <h3><u>Student Tickets</u></h3>
+  <p>
+    The student discount is typically offered for the same concerts as the Arts for All discount. This discount is open to patrons of all ages who have a valid student ID, as well as children.  In order to get the student discount, patrons must present a valid student ID in person at the ticket office once per season. In the case of a child who is too young to have an ID, the child must be present in order to get the discount.
+  </p>
+  <p>
+    The process for setting a patron up as a student is the same as setting up the Arts for All discount. The patron must have an account in Tessitura, and they must have the “Student (STU)” constituency set up on their account in the “Attributes” tab. The date range should also be set to expire at the end of the current season, as they need to show a valid student ID once per season. We will then provide them with the Student Discount Promo code to purchase tickets online.
+  </p>
+  <p>
+    Student tickets are $10, and it is 1 ticket per valid ID.  Student tickets can be purchased online, in person (at TO or the Hall), or over the phone. When selling a ticket with the student discount, the price type is “$10 Spec” (or “$10 Spec” with “Student” as the price type reason).
+  </p>
+  </div>
+  <div id="military">
+  <h3><u>Military Discount</u></h3>
+  <p>
+    The Oregon Symphony offers a discount to active military personnel and veterans. It is typically available for the same concerts as the Arts for All and Student discounts. Military discount tickets are $20 each and like the Arts for All we offer between 2 and 4 tickets per concert. They can order tickets in person, over the phone, or at the concert hall and get the discount – it is not available online.
+  </p>
+  <p>
+    Similar to the Arts for All and Student discount, patrons looking for the military discount must present a valid military or veteran’s ID in person at the ticket office or concert hall. They must have an account in Tessitura with the “Military (MIL)” constituency in the “Attributes” tab. The date range must begin with the day the patron is showing their ID, but the end date can be left open ended, so that the constituency will stay active on their account across seasons. Military personnel and veterans do not need to show a valid military ID every season.
+  </p>
+  <p>
+    When selling tickets with the Military discount, the price type is “$20 Spec” and the price type reason is “Military”. 
+  </p>
+  </div>
+  <div id="senior">
+  <h3><u>Senior Rush</u></h3>
+  <p>
+    The senior rush discount is available to patrons aged 62 and older. It is typically available for the same concerts as the Arts for All, Student, and Military discount, but it is ONLY available in person at the concert hall on the day of a performance. We start selling tickets at the concert hall 2 hours before a concert. The senior discount is 50% off the regular ticket price AND waived handling fees. When selling a senior discount ticket, choose the “Disc 50%” price type, with “Senior Discount” as the price type reason. There is not a limit on how many tickets a patron can get with the senior discount at the door, and we do not require seniors to present an ID in order to get the discount (unless it seems egregious). The senior discount is not available for seats in the Dress Circle.
+  </p>
+  </div>
+  <div id="pyp-mys">
+  <h3><u>PYP/MYS</u></h3>
+  <p>
+    The Oregon Symphony offers discounted tickets to our Classical Series concerts to several youth orchestras throughout the Portland metro area. Portland Youth Philharmonic (PYP) and Metropolitan Youth Symphony (MYS) are the 2 main youth orchestras the discount is available to. Members of these orchestras, and their immediate family, may purchase $10 tickets to any of our Classical Series concerts.  The discount is not offered on any of our Pops, Popcorn, Kids, or Special concerts.  We generally offer up to 4 tickets per concert but can accommodate more depending upon ticket availability.  Ask a manager if the patron would like more than 4 tickets to any one concert.
+  </p>
+  <p>
+    In order to sell tickets with the MYS or PYP discount, use the “$10 Spec” price type, and use the appropriate price type reason (“PYP”, or “MYS”).  Most frequently the PYP/MYS seating areas will be Front Center Right and Mezzanine Section E, and occasionally other areas that need to be filled in the concert hall. 	
+  </p>
+  </div>
+  <div id="chinook">
+  <u><h3>Chinook Book</h3></u>
+  <p>
+    The Chinook Book is a book of coupons/discount offers to a variety of different businesses and organizations in the Portland metro area. One of the coupons in the book offers a “Buy One, Get One (BOGO)” discount on tickets to any of our Monday evening Classical Series concerts. It is not valid on any of our other concerts. There is a regular paper copy of the book, and also a mobile version that is available as an app on a mobile device.
+  </p>
+  <p>
+    Patrons can use the Chinook Book coupon either in person at the ticket office or over the phone. For orders placed in person at the ticket office, patrons must present the paper coupon, or click the “Redeem” button for the coupon on their mobile device. For orders placed by phone, the ticket envelope must be stamped with the red “Chinook” stamp, and placed at Will Call. Patrons must present the paper coupon or show their redeemed mobile coupon to the Will Call attendant in order to pick up their tickets on the day of a performance. In order to sell tickets with the Chinook Book discount, 1 ticket should be sold at the standard full price, and the 2nd ticket should be issued as a COMP, with “Chinook Book” as the comp reason. The Chinook Book coupon is not available for seats in the Dress Circle.
+  </p>
+  </div>
+  <div id="arts-card">
+  <u><h3>The Arts Card/Arts Impact Fund</h3></u>
+  <p>
+    The Arts Card is a card you receive when you donate money to the Arts Impact Fund.  The card gives you 2-for-1 or “BOGO” tickets to select performances with arts organizations that receive funding from RACC.  The eligible concerts for this discount are determined by the Marketing department and the list is available in the Promotions spreadsheet.
+  </p>
+  <p>
+    The Arts Card discount can only be redeemed in person, at the ticket office. Patrons must present the Arts Card at time of purchase. 
+  </p>
+  <p>
+    In order to sell tickets with the Arts Card discount, 1 ticket should be sold at the standard full price, and the 2nd ticket should be issued as a COMP, with “Work for Art/Arts Card” as the comp reason. The Arts Card discount is not available for seats in the Dress Circle or lowest price tier (OrchRear and UpBal).
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="comp-ticket">
+  <h2 class="section">Staff, Musician, and Choir Discounts and Comp Tickets</h2>
+  <p>
+    The Oregon Symphony offers various other discounts and promotions throughout the season. For example, we typically offer a discount on tickets to members of the orchestra, Symphony staff, and members of the various choirs that occasionally perform with the Symphony.
+  </p>
+  <u><h3>Staff/Musician Comp Tickets</h3></u>
+  <p>
+    Staff/musician comp tickets are determined the Monday before the concert weekend similar to our Arts for All, Student, Military, and Senior discounts.  The Marketing department determines if comp tickets will be available to staff and musicians as well as how many.  Comp tickets may not be available for all concert performances and the number of tickets can vary performance to performance, though it is usually 2 to 4 tickets.  Much like our other discounts, the seating area is determined by the Director of Patron Services or Ticket Office Manager.  Usually similar places to our Arts for All and Military discounts.
+  </p>
+  <p>
+    If comp tickets are available, the Staff member or Musician will email the ctickets@orsymphony.org address to request their comp tickets.  We encourage both Staff and Musicians to not visit the Ticket Office in order to set up comps to keep the process fair and PSRs available to assist paying customers.
+  </p>
+  <p>
+    If comp tickets are not available or the concert is in the future, the Staff member or Musician can call in or visit the Ticket Office as a payment is needed (we do not want people emailing in their CC#s).  Staff and Musicians are allotted up to two 50% off tickets per concert.  If they would like to purchase more than 2 at the 50% discount, it will need to be approved by a manager.  
+  </p>
+  <p>   
+    In the event a Staff member or Musician has purchased tickets to a performance that comp tickets end up being offered, we will refund their money equal to the number of comp tickets offered.  But the Staff Member or Musician must contact the Ticket Office before the concert takes place to swap their paid tickets for comps.  
+  </p>
+  <p>
+    For example: Ariel purchased 4 50% off tickets to Disney in Concert. We then offered 2 comps for the day she had purchased tickets. She asked me to refund 2 of her tickets and turn them into comps.  I returned 2 of her 50% Disc tickets and reissued them as comps and refunded the money to her card.
+  </p>
+  <p>
+    In the event a staff member or musician is reserving tickets at the Ticket Office, you can assist them with reserving their comps.  To reserve a staff/musician comp ticket, open a new order in the staff or musician’s account in the Ticket Mode of Sale.  Then, reserve the number of comps allowed for the performance by using the “Sgl Comp” price type, and choose “Staff Comps” as the “price type reason”. 
+  </p>
+  </div>
+  <div id="staff-discount">
+  <u><h3>Staff/Musician Discount</h3></u>
+  <p>
+    At times we are unable to offer comp tickets to the staff and musicians because a concert is too sold out, or a Staff/Musician member may have received their maximum allowed number of comp tickets.  In this event, we can offer a 50% off discount and waived fees.  These tickets must be purchased at the Ticket Office.  We offer the 50% discount and waived fees on ONLY the first 2 tickets per performance.  Any additional tickets over that will have to be standard price.
+  </p>
+  <p>
+    To sell a staff/musician discount ticket, open a new order in the Ticket Mode of Sale, choose the desired performance and number of tickets, select the Disc 50% price type with “Staff Discount” as the reason.  Be sure to waive the $6 per ticket handling fees.
+  </p>
+  <p>
+    We offer many exceptions to our staff/musician policies, please ask a manager if you’re unsure if an exception should be made.
+  </p>
+  </div>
+  <div id="former-musician">
+  <u><h3>Former Musician Complimentary Subscriptions</h3></u>
+  <p>
+    Occasionally retired musicians and staff come to see concerts.  Generally, we offer them a total of 36 (2 tickets per concert maximum ) complimentary tickets to any Classical or Pops concert in any section with the exception of the Dress Circle.  If they choose a Popcorn, Kids, or Special concert we can extend the 50% staff discount with exception of our premium concerts.      </p>
+  <p>
+    Many retired musicians have been grandfathered into a variety of other discounts throughout the years so some may ask for something outside of the above mentioned offering.  In some cases the specific agreement will be documented in a CSI.  You can always ask a manager about what to offer the retired musician.
+  </p>
+  </div>
+  <div id="choir-discount">
+  <u><h3>Choir Discount</h3></u>
+  <p>
+    The Oregon Symphony offers ticket discounts to members of choirs who perform with us.  The discount is only for the concert they perform with us.  We offer a 50% off discount on up to 2 tickets.  Choir members can reserve their discount tickets over the phone or in person at the Ticket Office.
+  </p>
+  <p>
+    Selling a choir discount ticket is very similar to the staff and musician 50% discount but choose the Disc 50% price type with “Choir” as the reason.
+  </p>
+  </div>
+  <div id="gospel-choir-discount">
+  <u><h3>Gospel Choir Discount</h3></u>
+  <p>
+    The Oregon Symphony offers a special discount to members of the gospel choir who perform in Gospel Christmas as well as their friends and family.  The discount is only for the Gospel Christmas concert.  We offer a 20% off discount.  Not only can the choir members reserve tickets with this discount, but their friends and family can also reserve tickets at the 20% price.
+  </p>
+  <p>
+    Selling a choir discount ticket is very similar to the choir 50% discount but choose the Disc 20% price type with “Gospel Choir” as the reason.
+  </p>
+  </div>
+  <div id="other-offers">
+  <h3><u>Other Discounts/Special Offers/Promotions</u></h3>
+  <p>
+    The Marketing department also runs a variety of special promotions throughout the season.  These can be found in the “Promotions” document and the “Web Promotions” document. These documents are located on the G: Drive/Departments/Ticketing/CURRENT OFFERS.
+  </p>
+  <p>
+    When selling tickets using an offer from the “Promotions” or “Web Promotions” document, be sure to use the correct “Mode of Sale” and the correct “Source Code” in the order. Some offers are linked to a specific mode of sale and source code, and will not function properly if you do not have the order set up correctly. For example, “Christmas in July” offer is set up under the “Web Promo #3” mode of sale, with the source code: 12889. It is only valid for specific concerts and a discount is attached to the number of tickets and the offer will not display correctly if you aren’t using the right mode of sale or source code.
+  </p>
+  <p>
+    Furthermore, the “Source Code” is how our Marketing department tracks the success or failure of a given offer/promotion. The offers in the “Web Promotions” document are most often used by patrons on the website, but it is not uncommon for people to have difficulties online and call the ticket office in order to complete their purchase, so it is important that all PSR’s know how to properly set up these types of orders. Please see a manager if you have any questions about what is included in either document, or if you need help getting them as shortcuts on your desktop.
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="group-tickets">
+  <h2 class="section">Group Tickets</h2>
+  <p>
+    The Oregon Symphony also offers a variety of group promotions and discounts.  Most are available through the website or the Call Center.  Sometimes group patrons have issues reserving their tickets online and need assistance from the Ticket Office.  Group discounts and promotions are tracked in the same “Promotions” document but on the second tab labeled “20-21 Group Promotions.”  Generally, the group discount is 10% off (for groups of 10 or more), or 20% (for groups of 20 or more) with waived fees.
+  </p>
+  <p>
+    Selling a Group promotion ticket is much like our special offers where the discount is attached to the Mode of Sale and Source Code.  See the section above for directions on how to set up an order.
+  </p>
+  <p>
+    The performances below are excluded from the group discount:
+The Season Premiere:  Sat 10/2/21, Sun 10/3/21
+Joshua Bell with the Oregon Symphony:  all performances
+Mahler’s Symphony No, 9:  Sat 5/14/21, Sun 5/15/21
+Beethoven’s Ninth Symphony:  Sat 6/11/21, Sun 6/12/21
+  </p>
+  <hr>
+  </div>
+  <div id="concert-overview">
+  <h1 class="section">Concert Guide</h1>
+  <h2 class="section">At The Concert Hall</h2>
+  <p>
+    Part of working in the Oregon Symphony Ticket Office is working concert shifts at the concert hall.  Both Ticket Office and Call Center workers are expected to work concert shifts.  Occasionally a Will Call attendant or Merchandise Seller shift will be needed for a concert, but they are not required shifts as part of working in the Ticket Office.
+  </p>
+  <p>
+    The Oregon Symphony offers a wide variety of concert days and times to suit the needs of our patrons.
+  </p>
+  <p>
+    At the concert hall the Front of House Manager (FoHM) is the principal liaison between the Oregon Symphony and the Portland5 staff. The FoH’s primary responsibility is to ensure a smooth transition for our Patrons from the entrance of the concert venue to their seats themselves. They do so by coordinating with the ushers at the Arlene Schnitzer Hall in conjunction with production staff from Oregon Symphony. During the pre-concert period the FoH also is responsible for managing two PSRs who work the customer service table.
+  </p>
+  <p>
+    All Oregon Symphony Portland concerts happen at the Arlene Schnitzer Concert Hall, which is located at 1037 SW Broadway.  You will need to enter through the Broadway entrance, where our mobile ticket office has been set up. Concerts in Salem take place at Smith Auditorium on the campus of Willamette University. The address is 900 State St.
+  </p>
+  <p>
+    You will be provided with 1 parking pass for the South Park Garage that can only be used for concerts that the Oregon Symphony Orchestra performs. 
+  </p>
+  <h3><u>Concert Shift Schedule</u></h3>
+  <p>
+    Classical Series Concerts generally occur Saturday evening at 7:30 pm, Sunday afternoon at 2:00 pm, and Monday Evening at 7:30 pm.
+  </p>
+  <p>
+    Pops Series Concerts generally occur Saturday evening at 7:30 pm and Sunday afternoon at 2:00 pm. 
+  </p>
+  <p>
+    Popcorn Series Concerts generally occur Saturday evening at 7:30 pm and Sunday afternoon at 2:00 pm.  Occasionally when a Popcorn concert is selling well, we will add additional concert times depending upon availability of the orchestra and P5.
+  </p>
+  <p>
+    Special Concerts generally occur at 7:30 pm, and can happen any day of the week, though there are some exceptions.
+  </p>
+  <h3><u>When To Arrive</u></h3>
+  <p>
+    For weeknight evening concerts, ticket sellers should arrive at the Ticket Office at 1 pm, and then move to the concert hall at 5pm.  This shift is 7 hours long and you will take your lunch from either 3 to 4 or 4 to 5 pm.  9 pm is the expected departure time.
+  </p>
+  <p>
+    For weekend matinee concerts, ticket sellers are expected to arrive at the concert hall 2 and half hours before the start of the concert, or 11:30 am.  This shift is 5 hours long. 4:30 pm is the expected departure time.
+  </p>
+  <p>
+    For weekday evening concerts, ticket sellers should arrive at the ticket office at 1 pm, and then move to the concert hall at 5pm.  This shift is 7 hours long and you will take your lunch from 4 to 5 pm.  9 pm is the expected departure time.
+  </p>
+  <h3><u>Dress Code</u></h3>
+  <p>
+    As a representative of the Oregon Symphony, each employee is expected to present a professional appearance and maintain good grooming and personal cleanliness habits.
+  </p>
+  <p>
+    During work hours office staff employees should wear conservative business attire that fits their position and type of work. Employees who attend meetings or events representing the Oregon Symphony outside of the office are expected to wear business or other attire appropriate to the event.
+  </p>
+  <p>
+    For guidance, the following are not appropriate work attire: sweatpants, low-rider style pants, worn or torn jeans, cut-offs or shorts, short or low-cut tops, tube or halter tops, form-fitting or see-through clothing, slippers, flip-flops or attire with slogans. Conservative-length hemmed (not cut-off) shorts are acceptable attire for outdoor work such as setting up park and Waterfront concerts but are not appropriate in the office.
+  </p>
+  <p>
+    Because of the allergic sensitivities of others, employees are requested to refrain from wearing scent at work
+  </p>
+  
+  <h3><u>Setting Up</u></h3>
+  <p>
+    If it is the first concert of the weekend or you are working a one-night event, you will be responsible for setting up the Ticket Sales and Customer Service stations.  Usually the FoH manager has arrived before the PSRs and will begin setting up the Ticket Sales and Customer Service stations as well as additional marketing signs and materials.  There should be a table for the PSRs and a podium for the FoH already in place as well as 2 BOCA printers, ticket stock, a power strip, and a router.  The power strip and router need to be plugged into the wall in their respective ports located behind the merchandise table.  Typically, the FoH will have set up your station in advance of your arrival, however in the event that you are responsible for setting up your station you will be given a laptop bag that will contain:
+  </p>
+  <p>
+    <ul>
+      <li>A laptop</li>
+      <li>A mouse</li>
+      <li>A keyboard</li>
+      <li>Laptop power cable</li>
+      <li>An Ethernet  cable</li>
+      <li>Boca printer cable</li>
+      <li>A cash bank</li>
+    </ul>
+  </p>
+  <p>
+    After setting up your station, count your cash bank as described below. 
+  </p>
+  <p>
+    Once you have logged into the laptop and Tessitura, you will need to write the ticket prices on a seat map provided by the FoH manager.  There should be pens and a marker in your cash bank.  Use the marker to write all the specific prices on each seating section.  Be mindful of the Premium Sides, Lower and Upper Mezzanine, and other complicated spots on the map.  Next, the concert title and date as well as the available discounts, if there are any, on the side of the seat map.
+  </p>
+  <h3><u>Cash Bank Procedure</u></h3>
+  <p>
+    At the beginning of a concert weekend before any transactions occur there should be $300 in your cash bank.  The 5’s are clipped in $100 bundles, and 1’s are clipped in $25 bundles. Normally the last $25 to $50 is not bundled but is in the bag loose, 1’s 5’s and 10’s.  </p>
+  <h3><u>Selling Tickets at the Concert Hall</u></h3>
+  <p>
+    When making your deposit at the end of the night, use the largest bills possible to leave the smaller bills for the next days’ concerts.  Organize your deposit by bill type. All the 20’s together, 5’s together, 1’s together, etc. This should make your counting easier, and will also make my deposit checking and balancing easier.
+  </p>
+  <p>
+    Always check the deposit amount against your batch total and make sure they match.  To check your batch total, go to the Tools drop down at the top of your screen, select Batch Administrator, double click on your open batch, click on the “Print Summary” button in the bottom left corner of the page, scroll down to the bottom of the page where it shows the amount of money you took in divided by type.  Confirm that the cash and check amount in your batch matches the amount in your deposit.
+  </p>
+  <p>
+    Write your name, the date, and the total amount on the envelope. If there are checks, write your cash amount plus check amount, like this: “$50 + $25 check.”
+  </p>
+  <p>
+    There should be $300 change in the bag at all times once your deposit is complete. If your bag is over or under after you count your deposit, please tell the FoH manager, and include a note in the cash bag with your name, the date, and how much the bank is off. This is to inform the Ticket Office Manager, and the other PSRs who will be working with the same cash bag during that concert weekend that the cash balance is off.
+  </p>
+  <h3><u>Other Subscriber Services at the Hall</u></h3>
+  <p>
+    We can also assist Subscribers with reprinting tickets, ticket exchanges, comp voucher redemption, future ticket purchase, subscription renewal, and any other service we offer at the Ticket Office.  If a Subscriber is asking for something more complicated than a quick transaction and it is busy, you may ask them to return at intermission to continue as you need to help other patrons with getting into the concert.
+  </p>
+  <h3><u>Reprinting a Ticket</u></h3>
+  <p>
+    Frequently patrons will lose or forget their tickets or they will not be at the Will Call window and will need their tickets to be reprinted.  If it is slow, feel free to go into their ticket order and reprint their tickets.  If it is closer to the beginning of the concert, please refer them to the FoHAF, who can hand write their seat assignment for them and allow you to continue selling tickets.
+  </p>
+  <h3><u>Processing a Cash Payment</u></h3>
+  <p>
+    When you select the payment method “Cash” for a transaction in Tessitura, you are given the option to enter a “Tendered” amount if you do so, the change owed to your customer will be calculated automatically. There are a few preset buttons provided ($50, $20, $10, $5, $1, and Exact) that you can choose from that can streamline the process, especially during busy times.
+  </p>
+  <p>
+    It may help you to unclip one bundle of 5’s and one bundle of 1’s so you know you have those loose for change. If you only unclip one of these bundles and leave the rest untouched, you will know that they are complete when you count the remaining change at the end of the night.
+  </p>
+  <p>
+    Please count your cash slowly and carefully to avoid giving incorrect change, which is typically how we end up with out-of-balance bags.
+  </p>
+  <h3><u>Tearing Down</u></h3>
+  <p>
+    If you are working a one-night only or the final concert of the weekend, you will be responsible for tearing down the Ticket Sales and Customer Service stations.  You will assist the FoHAF with tearing down all materials and stowing them in the concert hall.
+  </p>
+  <h3><u>When to Depart</u></h3>
+  <p>
+    The FoHM will release you from your shift when your duties are complete.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="will-call">
+  <h2 class="section">Will Call: A How-To Guide</h2>
+  <p>
+    The Will Call box is where we keep tickets for future concerts.  It is organized by date and then by alphabetized last name.  All envelopes in Will Call must look uniform.  Keeping the Will Call box organized in this is extremely important so the Will Call Attendant can find patron’s tickets quickly at the hall during concert ingress.
+  </p>
+  <h3><u>Steps to Will Call Success</u></h3>
+  <p>
+    Steps to Will Call Success
+  <ol>
+    <li>Write the concert date in numerals (for example: 9/27) on the top right corner of the ticket envelope where it says, “Concert Date”</li>
+    <li>Either staple a printed ticket header onto the front of a ticket envelope so the top of the ticket header lines up, or write the patron’s name as LAST NAME, FIRST NAME on the line that says, “Last Name”. Tickets should be under the name of the individual who will actually be picking up the tickets at the will call window.</li>
+      <ol>
+        <li>If the tickets are being held under a name that is different than the name on the Tessitura account, please note that in the original order</li>
+      </ol>
+    <li>Once you place the tickets inside of the envelope, fold the flap inside</li>
+    <li>File the envelope by the date in the Will Call box</li>
+      <ol>
+        <li>If the specific concert date is not already in the Will Call box, please get a divider and make a new slot for the concert date</li>
+        <li>The tickets for each concert should be in alphabetical order by last name</li>
+      </ol>
+    <li>Occasionally we will have more than one concert in one day; in this case please specify the concert time next to the concert date and make sure there is a separate slot in the Will Call box for each concert</li>
+  </ol>
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="cancellations">
+  <h2 class="section">Canceled Performances</h2>
+  <h3><u>Canceled Concert Policy</u></h3>
+  <p>
+    In the event of a concert cancellation, patrons will be contacted promptly. The Oregon Symphony offers a generous exchange and/ or refund policy, and all ticket holders will have 90 days to act on any funds associated with the concert. After this period, if no action has been taken, these funds will automatically convert to a tax-deductible donation.
+  </p>
+  <p>
+    Canceled Concert Options
+    <ul>
+      <li>Donate:  Patrons can donate the value of their canceled concert(s) back to the Oregon Symphony</li>
+      <li>Gift Card:  Patrons can receive the value of their canceled concert(s) on a gift card that expires 1 year from date issued</li>
+      <li>Exchange:  Patrons can exchange the value of their canceled concert(s) for another concert later in the season if the entire season has not been canceled</li>
+      <li>Refund:  Patrons can request a refund for the value of their canceled concert(s)</li>
+    </ul>
+  </p>
+  <h3><u>2021/22 Season Credit</u></h3>
+  <p>
+    In the event a Subscriber transferred more ticket value from the canceled 2020/21 season than their subscription rollover, the value is being held in their 2021/22 season.  Subscribers may use this credit for any Oregon Symphony ticket purchase for the 2021/22 season.  It cannot be used to purchase CDs or other merchandise.  Season credits can only be redeemed over the phone or in-person.
+  </p>
+  <h3><u>2020/21 Gift Cards</u></h3>
+  <p>
+    Since part of the 2019/20 and the entirety of the 2020/21 season were canceled, any Oregon Symphony Gift Card that has been issued since March of 2020 will not expire until June 2022.  Usually our Gift Cards expire 1 year from the issue date.  Many also had an additional 10% added to the value. 
+  </p>
+  <h3><u>2020/21 Ticket Donations</u></h3>
+  <p>
+    Patrons had the option of donating their canceled ticket value back to the Oregon Symphony.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="children">
+  <h2 class="section">Children Attending Concerts</h2>
+  <p>
+    Keep in mind for our non-Kids Series concerts the minimum age is 3 years-old.  This is to ensure that everyone else has an enjoyable concert experience.  If a patron decides to bring a baby or small child to an adult concert, a ticket must be purchased for the baby even if they will be sitting on a parent’s lap.  This is for fire code and to ensure that everyone that enters the hall is safe and accounted for in the event of a disaster.  If we are offering a student discount for the concert, a student ticket can be purchased for the child, only after we have seen that it is, indeed, a child.  If we are not offering a student discount for the concert, a standard priced ticket must be purchased for the child.  Generally, we would reserve a ticket in the lowest price seating area available regardless of where the adult tickets are located.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="hall-discounts">
+  <h2 class="section">At the Hall Discounts</h2>
+  <p>The discounts we offer at the hall:</p>
+  <p> 
+    Arts for All
+    <ul>
+      <li>$5 per ticket</li>
+      <li>With Oregon Trail card</li>
+      <li>Max 2 – 4 tickets per card depending upon the concert ask the FoHM</li>
+    </ul>
+  </p>
+  <p> 
+    Military
+    <ul>
+      <li>$20 per ticket</li>
+      <li>With Military or Veteran’s ID</li>
+      <li>Max 4 per ID</li>
+    </ul>
+  </p>
+  <p> 
+    Senior
+    <ul>
+      <li>50% discount off of all remaining tickets (with the exception of the Dress Circle)</li>
+      <li>62 years old and up (No need to request ID)</li>
+      <li>No limit unless it’s outrageous</li>
+      <li>Waive fees</li>
+      <li>AT HALL ONLY</li>
+    </ul>
+  </p>
+  <p>
+    Student
+    <ul>
+      <li>$10 per ticket</li>
+      <li>With student ID – or – if they are obviously under 18 years-old</li>
+      <li>Max 1 ticket per ID</li>
+    </ul>
+  </p>
+  <p>
+    Subscriber
+    <ul>
+      <li>10% off ticket price (with exception of Premium concerts)</li>
+      <li>Must subscribe to current season/li>
+    </ul>
+  </p>
+  </div>
+  <hr>
+  <div id="accessible-seating">
+  <h1 class="section">ADA Accessible Seating How-To</h1>
+  <h3><u>Overview</u></h3>
+  <p>
+    In compliance with the Americans with Disabilities Act (ADA), the Oregon Symphony offers accessible seating for all of our performances at the Arlene Schnitzer Concert Hall. The process for selling and setting up ADA accessible seating for a single concert is detailed below.
+  </p>
+  <h3><u>Companion/Caregivers</u></h3>
+  <p>
+    Part of the ADA requires that the Symphony provide a complimentary ticket for the companion or caregiver of a patron who requires accessible seating, if one is requested. If a patron is purchasing an ADA accessible seat and asks about a seat for their companion/caregiver, a 2nd ticket may be added as a COMP (comp reason “Caregiver”). Please see a manager if you have any questions.
+  </p>
+  <hr class="dotted-line">
+  <h2 id="ada" class="section">ADA Seating Locations</h2>
+  <p>
+    The Arlene Schnitzer Concert Hall has ADA accessible seating on both levels of the hall. In the Orchestra level, they are located in sections A and D. There are a total of 12 ADA accessible seats located in the Rear Orchestra (6 on the left side in Orchestra Section A, and 6 on the right side in Orchestra Section D). On the seat map in Tessitura, these seats are marked with the letter “W” (for “wheelchair”). They are located in the very last row of the Orchestra Side A and D sections (Row HH). These seats are free-standing arm chairs that are different from the regular concert seats throughout the rest of the hall. These seats are ideal for those with mobility issues who need easy access to an exit, or who cannot travel far inside the concert hall. We also offer armless chairs for larger patrons who request “Ample Seating”. The process for setting this up is similar to how we set up ADA “Seat Pulls”. Please see a manager for details. Patrons are not required to be in a wheelchair to use these seats.
+  <p>
+    There are more ADA accessible seats in the Front Orchestra in Sections A and D. The ADA accessible seats in these sections are on the very end of the row (aisle 1 in Section A and aisle 5 in Section D). They begin in Row C and alternate every other row until Row N. The rows in the Front Orchestra Sections A and D that have a wheelchair accessible seat on the end are C, E, G, J, L, and N. The outside aisle seat in these rows is a standard concert seat that can be unbolted and removed in order to create a space for a wheelchair. These seats are ideal for patrons who need to stay in their wheelchair throughout the duration of a concert. On the seat map in Tessitura, they will show up as dark blue with a white dot in the middle. The dark blue color implies that there is a “hold” on them, as we typically reserve these seats for those with ADA needs.
+  </p>
+  <p>
+    There are also a limited number of ADA accessible seats in the Balcony level of the concert hall. They are located in the Dress Circle behind Sections A and E. There is a pair of seats in each location. Similar to the ones in the Rear Orchestra, they are free-standing arm chairs, and they are marked with a “W” on the seat map in Tessitura. For those inquiring, there is an elevator at the concert hall that will take patrons up to the Dress Circle. 
+  </p>
+  <h3><u>ADA Seat Pulls, Seat Kills, and Reminders</u></h3>
+  <p>
+    When selling a single ticket to a patron who requires wheelchair accessible seating in the Front Orchestra Side A and D sections (the seats with the dark blue “holds”), there is a step-by-step process that must be followed in order to ensure that the proper accommodations are made before the patron arrives at the concert hall.   
+  </p>
+  <ul>
+  <h3><li>Reserve the ADA Seat</li></h3>
+  <p>
+    When clicking on one of the seats with a dark blue “hold”, a box will pop up in Tessitura that reads: “That seat is held with the Wheelchair Hold code. Would you like to block it anyway”? Click “Yes” in order to select the seat as part of an order. If the patron will in fact be staying in their wheelchair during the concert, you must arrange for a “Seat Kill” as well as a “Seat Pull Reminder”. 
+  </p>
+  <h3><li>Seat Kill</li></h3>
+  <p>
+    When a patron will be staying in their wheelchair in one of the Front Orchestra ADA locations with a removable seat, it creates a limited amount of space for the seat directly behind that patron. We call this the “Kill Seat”. It will be blocked off with no legroom and we do not sell it.
+  </p>
+  <p>
+    When selling a ticket for an ADA accessible seat that needs to be removed, you must also add the seat directly behind it as a comp (comp reason “ADA Kill”). For example, if a patron who uses a wheelchair buys a pair of tickets in Orchestra Section A, Row J, Seats 1 and 2, the “Kill Seat” is Orchestra Section A, Row K, Seat 1. When the “Kill Seat” is added as a comp, it can be printed and torn up. We do not mail it to the patron or put it at Will Call, as it will not actually be used.
+  </p>
+  <h3><li>Seat Pull/Reminder</li></h3>
+  <p>
+    When selling a ticket in an ADA section to a patron who will be staying in their wheelchair, you must create a “Reminder” in Tessitura to ensure that a “Seat Pull” is taken care of before the concert. To complete a “Reminder”, pull up the patron's constituent record (CTRL+G) and go to the “Connections” tab. Click on “Reminders”. Click “Add” in the bottom left corner and a new line item will appear. The very first item on the left side of the line item will be a drop down menu of different names under “Assigned To”. Make sure to change the name to “ejohnsto” (Emily). Emily is the Ticket Office Manager, and she sends all the “Reminders” to the staff at the Portland5 to be fulfilled before a concert. In the next box, “Task Type”, select “Action” from the drop down menu. The “Priority” box can be left alone (it should read “Medium”). The next box, “Status”, can also be left alone. It should read “Not Complete”, but will change once it has been sent to Portland5 for fulfillment. In the box that says “Warn Days”, enter the number 5. This indicates that we forward the request 5 days in advance of the concert. The “Complete By” date should be the date of the concert you are creating the seat pull reminder for. **If you are creating a reminder for a seat pull less than 5 days before a concert, please let a manager know** The “Completed” and “Cyclical” boxes can be left empty. In the “Notes” field of the “Reminder”, write a short description of the seat that needs to be pulled, and for which concert. For example, if you sold a wheelchair accessible seat to a patron for “Star Wars” on Friday, September 13th in Orchestra Section A, Row J, Seat 1, the “Notes” should look something like this: “ADA Pull 9/13 7:30pm Please pull Orch A, Row J, Seat 1”.  Please see a manager with any questions about how to set up a seat pull “Reminder”. NOTE:  In the event of an exchange out of ADA seats which require a seat pull, remember to cancel the “Reminder” so that the seat does not mistakenly get pulled.
+  </p>
+  </ul>
+  <hr>
+  <hr>
+  </div>
+  <div id="resources">
+  <h1 class="section">Resources</h1>
+  <ul>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/2122/oregon-symphony-21-22-season-brochure.pdf">21-22 Portland Season Brochure</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/2122/salem-21-22-season-brochure.pdf">21-22 Salem Season Brochure</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/2122/oregon-symphony-choose-your-own-2021-22-brochure.pdf">21-22 Choose Your Own (CYO) Brochure</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/seat-maps/seatmap_classical.pdf">Arlene Schnitzer Seat Map</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/wysiwyg/salem/slm-044_jpg_oswebsite_salemseatmap_1224x1584.jpg">Smith Auditorium Seat Map</a>
+    </li>
+  </ul>
+  <hr class="dotted-line">
+  </div>
+</div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 
