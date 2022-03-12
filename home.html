@@ -1,106 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-/* Fixed sidenav, full height */
-
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}
-
-/* Main content */
-.main {
-  margin-right: 200px;
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-.background {
-  background-color: #FAF9F6;
-}
-
-.section {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.dotted-line {
-  border:none;
-  border-top:1px dashed;
-  height:1px;
-  width:50%;
-}
-
-.landing-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 125px;
-  width: 50%;
-}
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+  <title>Ticket Office Handbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/assets/icon.png">
+  <script defer type="text/javascript" src="/src/index.js"></script>
 </head>
-<body class="background">
 
+<body class="background">
 <div class="sidenav">
   <button class="dropdown-btn">Subscriptions
     <i class="fa fa-caret-down"></i>
@@ -156,7 +66,7 @@ body {
 
 <div class="main">
   <div class="chapter">
-  <img class="landing-logo" src="https://www.orsymphony.org/globalassets/media/logo_OS_v_RGB.png">
+  <img class="landing-logo" src="/assets/logo.png">
   <h1 class="section">Ticket Office Handbook</h1>
   <hr>
   <div id="sub-overview">
@@ -832,24 +742,5 @@ Beethoven’s Ninth Symphony:  Sat 6/11/21, Sun 6/12/21
   </div>
 </div>
 </div>
-
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-</script>
-
 </body>
 </html> 
